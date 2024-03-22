@@ -1,7 +1,9 @@
 #include "mbed.h"
 #include "arm_book_lib.h"
 
-// Tomas Ginzburg con placa N°2985
+// Tomas Ginzburg con padron 107438 y placa N°2985
+// Estoy con el plan 2023 
+// Este ejemplo es el 1.1 y hace prender el led que simula la alarma si se detecto gas, en este caso con un push button
 
 int main()
 {
@@ -13,7 +15,7 @@ int main()
 
     alarmLed = OFF; // Inicio con el led apagado
 
-    printf("%s\n","Hello World");
+    printf("%s\n","Hola soy tomas");
 
     while (true) {
         if ( gasDetector == ON ) {

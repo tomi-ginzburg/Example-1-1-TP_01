@@ -1,6 +1,8 @@
 #include "mbed.h"
 #include "arm_book_lib.h"
 
+// Tomas Ginzburg con placa N°2985
+
 int main()
 {
     DigitalIn gasDetector(D2); // Configuro pin D2 como entrada

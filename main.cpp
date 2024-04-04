@@ -7,6 +7,11 @@
 
 int main()
 {
+    /* 
+     * Al entrar a DigitalIn me meto a la libreria de mbed
+     * Sigo en distintos archivos de libreria de mbed (ST)
+     * Hasta llegar a las librerias de ARM
+     */
     DigitalIn gasDetector(D2); // Configuro pin D2 como entrada
 
     DigitalOut alarmLed(LED1); // Configuro Led 1 como salida
@@ -15,7 +20,7 @@ int main()
 
     alarmLed = OFF; // Inicio con el led apagado
 
-    printf("%s\n","Hola soy tomas");
+    printf("%s\n","Hola soy tomas"); 
 
     while (true) {
         if ( gasDetector == ON ) {
